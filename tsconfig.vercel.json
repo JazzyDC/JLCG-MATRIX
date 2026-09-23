@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }]
+  },
+  "include": [
+    "next-env.vercel.d.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "db/store.ts",
+    "db/d1-http.ts",
+    "env.d.ts",
+    "next.config.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
